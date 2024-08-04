@@ -67,9 +67,6 @@ h6 {
   font-weight: inherit;
   font-size: inherit
 }
-body {
-  background-color: #9effff
-}
 .lock body {
   overflow: hidden;
   touch-action: none;
@@ -83,6 +80,7 @@ body {
   flex-direction: column;
   overflow: hidden;
   max-width: 1080px;
+  border-radius: 10px;
   margin: auto;
   background-color: #fff;
   box-shadow: 0 10px 20px 0 rgba(0,0,0,.04)
@@ -93,7 +91,8 @@ body {
   }
 }
 .wrapper>main {
-  flex: 1 1 auto
+  flex: 1 1 auto;
+  border: 1px solid #000
 }
 .wrapper>* {
   min-width: 0
@@ -151,7 +150,8 @@ body {
   object-fit: cover;
   margin: 0 0 0 -.5rem;
   max-width: 300px;
-  border-radius: 15px
+  border-radius: 15px;
+  border: 1px solid #0f3c4f
 }
 .pattern-repeat__image2 {
   min-width: 300px;
@@ -164,8 +164,7 @@ body {
 }
 .pattern-repeat__list li {
   list-style-type: none;
-  padding: .9375rem 0 .9375rem .9375rem;
-  text-transform: lowercase
+  padding: .9375rem 0 .9375rem .9375rem
 }
 .pattern-repeat__list li::first-letter {
   text-transform: uppercase
@@ -176,10 +175,13 @@ body {
   font-weight: 600;
   font-style: italic
 }
+.pattern-repeat__text p {
+  padding-bottom: 10px
+}
 .pattern-repeat__text span {
   position: relative;
   left: 35%;
-  display: inline-block;
+  display: block;
   text-align: center;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -195,6 +197,9 @@ body {
 .column--reverse {
   padding: 0 .5rem 0 0
 }
+.line--bold {
+  font-weight: 900
+}
 .header {
   padding: 1.25rem 0 1.25rem 0;
   background: #0f3c4f;
@@ -209,6 +214,7 @@ body {
   border-bottom: 1px solid #000
 }
 .header__container {
+  max-width: 1200px;
   padding: 0 .625rem
 }
 .header__top {
@@ -287,7 +293,7 @@ body {
   text-align: center
 }
 .page {
-  margin-top: 6.25rem;
+  margin-top: 5rem;
   background: url(../img/2santehnika.webp) 50% 50%/cover no-repeat
 }
 .page__container {
@@ -303,6 +309,7 @@ body {
   position: relative;
   top: 200px;
   left: 10px;
+  text-align: center;
   height: 400px;
   color: #fff;
   font-size: 2.1875rem;
@@ -358,7 +365,8 @@ body {
 .prisese__subtitle {
   font-size: 1.375rem;
   font-weight: 600;
-  text-align: center
+  text-align: center;
+  padding-bottom: 1.25rem
 }
 .prisese__subtitle span {
   color: red;
@@ -447,7 +455,8 @@ body {
     max-width: 990px
   }
   .pattern-repeat__list {
-    list-style-type: "👍"
+    list-style-type: "👍";
+    padding: .9375rem 0 .9375rem 0
   }
   .pattern-repeat__text span {
     left: 15%
@@ -630,7 +639,7 @@ body {
     border-bottom: none
   }
   .menu__link {
-    padding: 1.875rem 0 1.875rem 0;
+    padding: 3.125rem 0 1.875rem 0;
     font-size: 20px
   }
   .menu__link *:last-child {
